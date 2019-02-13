@@ -1,0 +1,125 @@
+﻿<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<div class="parallax_scrolling">
+    <div class="dark_background">
+
+        <header class="row">
+            <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                <p class="oxygen logo">Canberra Restaurants</p>
+                <p class="niconne">Dishes</p>
+            </div>
+        </header>
+
+        <main class="row row-white">
+
+            <section class="row">
+                <div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12">
+                    <p class="oxygen oxygen-row oxygen-narrow">A Dish for Every Taste</p>
+                    <p class="text-black">If you've got a hankering for a big slice of handmade pizza or a delicious, spicy kebab, then look no further.</p>
+                    <p class="text-black" style="padding-bottom: 20px;">Check out what's on offer by selecting a dish from the menu below.</p>
+                </div>
+                <div class="col-md-5 col-sm-5 col-xs-12">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img src="~/images/foodimg4.jpg" class="image-column-narrow" />
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <img src="~/images/foodimg3.jpg" class="image-column-narrow" />
+                    </div>
+                </div>
+            </section>
+
+            <!--Elastic Grid-->
+
+            <section class="container" style="max-width:1000px;" id="elastic_grid"></section>
+            <script type="text/javascript">
+                $(function () {
+                    $("#elastic_grid").elastic_grid({
+                        'showAllText': 'All',
+                        'filterEffect': 'popup',
+                        'hoverDirection': true,
+                        'hoverDelay': 0,
+                        'hoverInverse': false,
+                        'expandingSpeed': 500,
+                        'expandingHeight': 364,
+                        'items':
+                        [
+                            {
+                                'title': 'Chicken Gourmet <hr/> <a class="btn btn-primary">More Details</a>',
+                                'description': '<p>Chicken Gourmet has been proudly serving Canberra since 1980! Most of the delicious food is home made, and is always fresh and healthy. We take pride in the food we serve, from our famous hot chips and chicken burgers to pizzas, lasagne and fresh and healthy salads. Chicken Gourmet also has a catering service, we can look after your events big or small. Check out our catering page for more information on menus and catering packages.</p>',
+                                'thumbnail': ['/images/cglogomd.jpg'],
+                                'large': ['/images/cglogolg.jpg'],
+                                'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'http://chickengourmet.com.au/', 'new_window': true },
+                                ],
+                                'tags': ['Pizza']
+                            },
+
+                            {
+                                'title': 'Chaki Chaki <hr/> <a class="btn btn-primary">More Details</a>',
+                                'description': '<p>Looking for authentic Japanese cuisine in Canberra? Chaki Chaki, located on the balcony level of Braddon\'s modern and stylish Ori building, and with views over Lonsdale Street from our balcony, is ready to take you on a culinary adventure. Let our head chef Yujiro give you the perfect Japanese restaurant experience. One that we believe has never been done until now. At Chaki Chaki, we are respectful of our four most important ingredients: Customer, Safety, Freshness, Health.</p>',
+                                'thumbnail': ['/images/chakilogomd.jpg'],
+                                'large': ['/images/chakilogolg.jpg'],
+                                'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'http://chakichaki.com.au/', 'new_window': true },
+                                ],
+                                'tags': ['Sushi']
+                            },
+
+                            {
+                                'title': 'Cisco\'s Restaurante Mexicano <hr/> <a class="btn btn-primary">More Details</a>',
+                                'description': '<p>Canberra’s authentic Mexican Restaurant with a friendly, relaxed atmosphere, great food, and of course our famous Margaritas. Our banquet options will make Cisco’s an ideal place for groups to celebrate birthdays or any other special occasion. A Tequila Menu with over twenty different offerings of the distilled cactus juice will complement old favourites like the frozen Margarita and Strawberry Daiquiri or the traditional Sangria. And of course there’s also a choice of Mexican and Australian Beers, and a range of spirits from the bar. We hope you enjoy the Cisco’s experience.</p>',
+                                'thumbnail': ['/images/ciscoslogomd.jpg'],
+                                'large': ['/images/ciscoslogolg.jpg'],
+                                'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'http://www.ciscosmexicano.com.au/', 'new_window': true },
+                                ],
+                                'tags': ['Nachos']
+                            },
+
+                            {
+                                'title': 'Iori <hr/> <a class="btn btn-primary">More Details</a>',
+                                'description': '<p>A relaxed and fun dining atmosphere in an unpretentious setting makes IORI a must for lovers of Japanese food in Canberra. Well known Japanese master chef Mamoru Aizawa leads a team of dedicated Chefs who will deliver ‘The Best Experience’ to you.</p>',
+                                'thumbnail': ['/images/iorilogomd.jpg'],
+                                'large': ['/images/iorilogolg.jpg'],
+                                'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'http://iori.com.au/', 'new_window': true },
+                                ],
+                                'tags': ['Sushi']
+                            },
+
+                            {
+                                'title': 'Mister Zee\'s <hr/> <a class="btn btn-primary">More Details</a>',
+                                'description': '<p>Mister Zee’s is a Middle Eastern Charcoal Grill & Café with a modern take on flavours from the Middle East, served without ceremony. Set in a casual relaxed environment located in the heart of Canberra City we offer eat in, take away and home delivery options. Our passion is food and we pride ourselves in using quality produce that we source from local suppliers. Whether it’s a quick lunch, dinner before a movie or a catering function for a gathering, Mister Zee’s has you covered. Our food speaks for itself and is made to share with family and friends – cutlery optional.</p>',
+                                'thumbnail': ['/images/zeelogomd.jpg'],
+                                'large': ['/images/zeelogolg.jpg'],
+                                'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'http://misterzees.com.au/', 'new_window': true },
+                                ],
+                                'tags': ['Kebabs']
+                            },
+
+                            {
+                                'title': 'Sage <hr/> <a class="btn btn-primary">More Details</a>',
+                                'description': '<p>Sage is an exciting and innovative restaurant focusing on cutting edge cuisine in an intimate dining room. The food has been described as ‘whimsical pieces of art’ and is as much a feast for the eyes as it is for the palate. The centrepiece of Sage dining is the seven course degustation, with offerings such as Seared Scallops with chestnut cream, chorizo, celery tips & px molasses and the Caramelized Riverina Lamb Rump with grilled baby eggplant, zucchini puree & pepperonata. Finishing with a cheese course or the heavenly Chocolate Trilogy, the Sage degustation is an experience to remember.</p>',
+                                'thumbnail': ['/images/sagelogomd.png'],
+                                'large': ['/images/sagelogolg.png'],
+                                'button_list':
+                                [
+                                    { 'title': 'Visit Website', 'url': 'http://www.sagerestaurant.net.au/', 'new_window': true },
+                                ],
+                                'tags': ['Seafood']
+                            },
+                        ]
+                    });
+                });
+            </script>
+
+        </main>
+
+    </div>
+</div>

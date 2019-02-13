@@ -1,0 +1,272 @@
+﻿.parallax_scrolling {
+    background-attachment: fixed;
+    background-color: #645862;
+    background-image: url("../images/restbackground3.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    cursor: default;
+    text-align: center;
+    padding: 0;
+}
+
+.dark_background {
+    background-color: black; /*Fallback color*/
+    background-color: rgba(31, 20, 20, 0.8);
+    padding: 40px 0 0 0;
+}
+
+.oxygen {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 22px;
+    color: black;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 0 5px 0; /*Change in media query?*/
+    margin: 60px 0 60px 0;
+    border: 2px solid #FFF;
+}
+
+.lato {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.niconne {
+    font-family: 'Niconne', cursive;
+    color: #f8bd08;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: -25px;
+}
+
+img {
+    width: 100%;
+}
+
+/*CUSTOM CLASSES*/
+
+.row-white {
+    background-color: white;
+    margin: 50px 0 50px 0;
+}
+
+.niconne-row {
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: -15px;
+    text-align: left;
+}
+
+.niconne-centre {
+    font-size: 45px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.oxygen-row {
+    color: black;
+    font-size: 22px;
+    margin: 0 0 20px 0;
+    text-align: left;
+}
+
+.text-black {
+    color: black;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+.text-white {
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.link-dark {
+    color: #f8bd08;
+}
+
+/*STUFF FOR HOME PAGE*/
+
+#home-logo {
+    color:white;
+}
+
+#quote-author {
+    margin-top: -20px;
+    margin-bottom: 50px;
+}
+
+.double-line {
+    border-top: 3px solid #f8bd08;
+    border-bottom: 3px solid #f8bd08;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.single-line {
+    border-bottom: 3px solid #f8bd08;
+    padding: 15px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 480px) {
+
+    .oxygen, .oxygen-row {
+        font-size: 18px;
+    }
+
+    .lato {
+        font-size: 16px;
+    }
+
+    .niconne {
+        font-size: 40px;
+    }
+
+    .niconne-row, .niconne-centre {
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .review-image {
+        padding-top: 100px;
+    }
+
+    .oxygen, .oxygen-row {
+        font-size: 24px;
+    }
+
+    .lato {
+        font-size: 22px;
+    }
+
+    .niconne {
+        font-size: 60px;
+    }
+
+    .niconne-row, .niconne-centre {
+        font-size: 50px;
+    }
+
+    #quote-author {
+        margin-top: -35px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    #home-logo {
+        margin-bottom: 200px;
+    }
+
+    .welcome-image {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .oxygen, .oxygen-row {
+        font-size: 28px;
+    }
+
+    .lato {
+        font-size: 24px;
+    }
+
+    .niconne {
+        font-size: 65px;
+    }
+
+    .niconne-row, .niconne-centre {
+        font-size: 55px;
+    }
+
+}
+
+/*Stuff for Restaurants Page*/
+
+.logo {
+    color: white;
+}
+
+.oxygen-narrow {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.black-border {
+    border: 3px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.image-column-restaurants {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/*Stuff for Cuisine page*/
+
+.image-column-narrow {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.img-accordion {
+    width: 90%;
+    padding: 10px;
+}
+
+/*Stuff for Prices Page*/
+
+.pricelist {
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    margin: auto 25px auto 25px;
+    border-radius: 5px;
+}
+
+.cheap-eats, .mid-range, .fine-dining {
+    width: 200px;
+    height: 200px;
+}
+
+/*Stuff for Location Page*/
+
+.map-text {
+    color: black;
+    text-align: left;
+}
+
+/*Stuff for Reviews*/
+
+.control-label {
+    color: black;
+    float: left;
+    text-align: left;
+}
+
+.test-review-page {
+    color: black;
+}
+
+.dl-horizontal {
+    color: black;
+}
+
+dd {
+    text-align: left;
+}

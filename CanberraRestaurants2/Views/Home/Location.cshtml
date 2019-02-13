@@ -1,0 +1,226 @@
+﻿<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAYdTg9wzF18lLQjEsOoPjRq9M-eTAR6F8"></script>
+
+<script>
+    // Declare a variable for map
+    var map;
+    // Get latitude and longitude of restaurants
+    var chickenGourmet = new google.maps.LatLng(-35.278302, 149.125938);
+    var sage = new google.maps.LatLng(-35.277582, 149.137513);
+    var chakiChaki = new google.maps.LatLng(-35.271598, 149.133431);
+    var misterZees = new google.maps.LatLng(-35.278441, 149.132859);
+    var ciscos = new google.maps.LatLng(-35.316698, 149.141284);
+    var iori = new google.maps.LatLng(-35.278659, 149.130384);
+
+    // Initialise the map
+    function initMap() {
+        // Define the properties for Canberra Restaurants map
+        var canberraMap = {
+            center: iori,
+            zoom: 13,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        // Create a map object for each restaurant
+        // using canberraMap and the <div> element with id="googleMap"
+        map = new google.maps.Map(
+            document.getElementById("googleMap"), canberraMap);
+
+        // Add markers below this line
+
+        addChickenGourmetMarker(map);
+        addSageMarker(map);
+        addChakiChakiMarker(map);
+        addMisterZeesMarker(map);
+        addCiscosMarker(map);
+        addIoriMarker(map);
+
+    }
+    // Add other functions below this line
+
+    function addChickenGourmetMarker(map) {
+        // Chicken Gourmet
+        var chickenGourmet =
+            new google.maps.LatLng(-35.278302, 149.125938);
+        var markerChickenGourmet = new google.maps.Marker({
+            position: chickenGourmet,
+        });
+
+        markerChickenGourmet.setMap(map);
+
+        var contentChickenGourmet =
+            ' <h1 class="map-text">Chicken Gourmet</h1>' +
+            ' <img src="../images/cglogosm.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p class="map-text">Chicken Gourmet has been proudly serving Canberra since 1980! Most of the delicious food is home made, and is always fresh and healthy. We take pride in the food we serve, from our famous hot chips and chicken burgers to pizzas, lasagne and fresh and healthy salads. Chicken Gourmet also has a catering service, we can look after your events big or small. Check out our catering page for more information on menus and catering packages. </p>' +
+            '<p class="map-text"><a href="http://chickengourmet.com.au/">Click Here</a> for Chicken Gourmet\'s website.';
+
+        var infoChickenGourmet = new google.maps.InfoWindow({
+            content: contentChickenGourmet
+        });
+
+        google.maps.event.addListener(markerChickenGourmet, 'click',
+            function () {
+                infoChickenGourmet.open(map, markerChickenGourmet);
+            });
+    }
+
+    function addSageMarker(map) {
+        // Sage
+        var sage =
+            new google.maps.LatLng(-35.277582, 149.137513);
+        var markerSage = new google.maps.Marker({
+            position: sage,
+        });
+
+        markerSage.setMap(map);
+
+        var contentSage =
+            ' <h1 class="map-text">Sage</h1>' +
+            ' <img src="../images/sagelogosm.png" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p class="map-text">Sage is an exciting and innovative restaurant focusing on cutting edge cuisine in an intimate dining room. The food has been described as ‘whimsical pieces of art’ and is as much a feast for the eyes as it is for the palate. The centrepiece of Sage dining is the seven course degustation, with offerings such as Seared Scallops with chestnut cream, chorizo, celery tips & px molasses and the Caramelized Riverina Lamb Rump with grilled baby eggplant, zucchini puree & pepperonata. Finishing with a cheese course or the heavenly Chocolate Trilogy, the Sage degustation is an experience to remember.</p>' +
+            '<p class="map-text" > <a href="http://www.sagerestaurant.net.au/">Click Here</a> for Sage\'s website.';
+
+        var infoSage = new google.maps.InfoWindow({
+            content: contentSage
+        });
+
+        google.maps.event.addListener(markerSage, 'click',
+            function () {
+                infoSage.open(map, markerSage);
+            });
+    }
+
+    function addChakiChakiMarker(map) {
+        // Chaki Chaki
+        var chakiChaki =
+            new google.maps.LatLng(-35.271598, 149.133431);
+        var markerChakiChaki = new google.maps.Marker({
+            position: chakiChaki,
+        });
+
+        markerChakiChaki.setMap(map);
+
+        var contentChakiChaki =
+            ' <h1 class="map-text">Chaki Chaki</h1>' +
+            ' <img src="../images/chakilogosm.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p class="map-text">Looking for authentic Japanese cuisine in Canberra? Chaki Chaki, located on the balcony level of Braddon\'s modern and stylish Ori building, and with views over Lonsdale Street from our balcony, is ready to take you on a culinary adventure. Let our head chef Yujiro give you the perfect Japanese restaurant experience. One that we believe has never been done until now. At Chaki Chaki, we are respectful of our four most important ingredients: Customer, Safety, Freshness, Health.</p>' +
+            '<p class="map-text" > <a href="http://chakichaki.com.au/">Click Here</a> for Chaki Chaki\'s website.';
+
+        var infoChakiChaki = new google.maps.InfoWindow({
+            content: contentChakiChaki
+        });
+
+        google.maps.event.addListener(markerChakiChaki, 'click',
+            function () {
+                infoChakiChaki.open(map, markerChakiChaki);
+            });
+    }
+
+    function addMisterZeesMarker(map) {
+        // Mister Zee's
+        var misterZees =
+            new google.maps.LatLng(-35.278441, 149.132859);
+        var markerMisterZees = new google.maps.Marker({
+            position: misterZees,
+        });
+
+        markerMisterZees.setMap(map);
+
+        var contentMisterZees =
+            ' <h1 class="map-text">Mister Zee\'s</h1>' +
+            ' <img src="../images/zeelogosm.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p class="map-text">Mister Zee’s is a Middle Eastern Charcoal Grill & Café with a modern take on flavours from the Middle East, served without ceremony. Set in a casual relaxed environment located in the heart of Canberra City we offer eat in, take away and home delivery options. Our passion is food and we pride ourselves in using quality produce that we source from local suppliers. Whether it’s a quick lunch, dinner before a movie or a catering function for a gathering, Mister Zee’s has you covered. Our food speaks for itself and is made to share with family and friends – cutlery optional.</p>' +
+            '<p class="map-text" > <a href="http://misterzees.com.au/">Click Here</a> for Mister Zee\'s website.';
+
+        var infoMisterZees = new google.maps.InfoWindow({
+            content: contentMisterZees
+        });
+
+        google.maps.event.addListener(markerMisterZees, 'click',
+            function () {
+                infoMisterZees.open(map, markerMisterZees);
+            });
+    }
+
+    function addCiscosMarker(map) {
+        // Cisco's
+        var ciscos =
+            new google.maps.LatLng(-35.316698, 149.141284);
+        var markerCiscos = new google.maps.Marker({
+            position: ciscos,
+        });
+
+        markerCiscos.setMap(map);
+
+        var contentCiscos =
+            ' <h1 class="map-text">Cisco\'s Restaurante Mexicano</h1>' +
+            ' <img src="../images/ciscoslogosm.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p class="map-text">Canberra’s authentic Mexican Restaurant with a friendly, relaxed atmosphere, great food, and of course our famous Margaritas. Our banquet options will make Cisco’s an ideal place for groups to celebrate birthdays or any other special occasion. A Tequila Menu with over twenty different offerings of the distilled cactus juice will complement old favourites like the frozen Margarita and Strawberry Daiquiri or the traditional Sangria. And of course there’s also a choice of Mexican and Australian Beers, and a range of spirits from the bar. We hope you enjoy the Cisco’s experience.</p>' +
+            '<p class="map-text" > <a href="http://www.ciscosmexicano.com.au/">Click Here</a> for Cisco\'s website.';
+
+        var infoCiscos = new google.maps.InfoWindow({
+            content: contentCiscos
+        });
+
+        google.maps.event.addListener(markerCiscos, 'click',
+            function () {
+                infoCiscos.open(map, markerCiscos);
+            });
+    }
+
+    function addIoriMarker(map) {
+        // Iori
+        var iori =
+            new google.maps.LatLng(-35.278659, 149.130384);
+        var markerIori = new google.maps.Marker({
+            position: iori,
+        });
+
+        markerIori.setMap(map);
+
+        var contentIori =
+            ' <h1 class="map-text">Iori</h1>' +
+            ' <img src="../images/iorilogosm.jpg" ' +
+            '      style="float:left; width:25%; margin-right:10px;">' +
+            ' <p class="map-text">A relaxed and fun dining atmosphere in an unpretentious setting makes IORI a must for lovers of Japanese food in Canberra. Well known Japanese master chef Mamoru Aizawa leads a team of dedicated Chefs who will deliver ‘The Best Experience’ to you.</p>' +
+            '<p class="map-text" > <a href="http://iori.com.au/">Click Here</a> for Iori\'s website.';
+
+        var infoIori = new google.maps.InfoWindow({
+            content: contentIori
+        });
+
+        google.maps.event.addListener(markerIori, 'click',
+            function () {
+                infoIori.open(map, markerIori);
+            });
+    }
+
+    // Add a DOM listener that will execute the initMap function
+    // on window load (when the page is loaded)
+    google.maps.event.addDomListener(window, 'load', initMap);
+</script>
+
+<div class="parallax_scrolling">
+    <div class="dark_background">
+
+        <header class="row">
+            <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+                <p class="oxygen logo">Canberra Restaurants</p>
+            </div>
+        </header>
+        <section class="row">
+            <div class="col-xs-10 col-xs-offset-1" style="margin-bottom: 50px;">
+                <p class="niconne">Restaurant Locations</p>
+            </div>
+        </section>
+
+        <div id="googleMap" style="width:100%;height:800px;"></div>
+
+    </div>
+</div>
+
+
